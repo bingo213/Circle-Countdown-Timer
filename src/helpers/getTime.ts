@@ -1,5 +1,7 @@
 export const getTime = (futureDate: Date) => {
-  const time = Math.round((futureDate.getTime() - new Date().getTime()) / 1000);
+  const time = Math.round(
+    (futureDate.getTime() - new Date().getTime()) / 1000
+  );
   return {
     days: Math.floor(time / (24 * 3600)),
     hours: Math.floor(time / 3600) % 24,
